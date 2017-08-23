@@ -1,2 +1,8 @@
-<h1>Candles#index</h1>
-<p>Find me in app/views/candles/index.html.erb</p>
+<h1> Candles </h1>
+<p><%= link_to 'New Candle', new_candle_path %></p>
+<% @candles.each do |candle| %>
+  <h2><%= candle.title %></h2>
+  <h3><%= candle.body %></h3>
+  <h3><%= candle.price %></h3>
+  <%= link_to 'Back', root_path %>
+<% end %>
