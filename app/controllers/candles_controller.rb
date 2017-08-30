@@ -5,6 +5,7 @@ class CandlesController < ApplicationController
 
   def show
     @candle = Candle.find(params[:id])
+    @candle = @candle.present?
   end
 
   def create
