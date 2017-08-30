@@ -4,3 +4,40 @@
 <h3><%= @candle.price %></h3>
 <%= link_to 'Back', candles_path %>
 
+
+<h1 class="center"> Candle </h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12 l12 center">
+      <div class="col s4 m4 l4">
+        <p>Title</p>
+      </div>
+      <div class="col s4 m4 l4">
+        <p>Body</p>
+      </div>
+      <div class="col s4 m4 l4">
+        <p>Price</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12 l12 center">
+      <div class="col s4 m4 l4">
+        <h4 class="show"><%= @candle.title %></h4>
+      </div>
+      <div class="col s4 m4 l4">
+        <h4 class="show"><%= @candle.body %></h4>
+      </div>
+      <div class="col s4 m4 l4">
+        <h4 class="show"><%= @candle.price %></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="center">
+
+  <h5><%= link_to 'Back', candles_path %></h5>
+</div>
