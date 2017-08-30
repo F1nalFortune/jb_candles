@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root 'candles#index'
 
   resources :candles
-  get '/our_purpose', to: 'candles#our_purpose', as: '/our_purpose'
   get '/product', to: 'candles#product', as: '/product'
   get '/blog', to: 'candles#blog', as: '/blog'
   get '/giving_back', to:'candles#giving_back', as: '/giving_back'
