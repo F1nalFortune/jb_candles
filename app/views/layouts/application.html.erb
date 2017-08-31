@@ -3,16 +3,15 @@
 <head>
   <title>JbCandles</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <%= render 'layouts/navbar' %>
-<%= yield %>
-  <%= render 'layouts/footer' %>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-</body>
+  <body>
+      <%= render 'layouts/navbar' %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>
